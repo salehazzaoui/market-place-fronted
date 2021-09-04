@@ -19,6 +19,10 @@ export default function Home() {
   useEffect(() => {
     dispatch(productsAsync());
   }, []);
+
+  const ratingChanged = (newRating) => {
+    console.log(newRating);
+  };
   return (
     <div>
       <Head>
